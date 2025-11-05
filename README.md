@@ -1,1 +1,0 @@
-# shadikur.github.io
