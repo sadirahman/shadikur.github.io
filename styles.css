@@ -126,6 +126,48 @@ body {
   background: rgba(99,102,241,.25);
   color: #c7d2fe;
 }
+/* === Teaching Timeline (same layout, theme-aware colors) === */
+
+.teaching-year {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.teaching-year-label {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--bs-emphasis-color);  /* replaces #67738d */
+  min-width: 70px;
+}
+
+.teaching-year-content {
+  border-left: 3px solid var(--bs-border-color);  /* replaces #e5e7eb */
+  padding-left: 1.5rem;
+  margin-top: 0.15rem;
+}
+
+/* Course title (same font, but color theme-aware) */
+.teaching-course .teaching-code {
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas,
+               "Liberation Mono", monospace;
+  font-size: 1.05rem;
+  color: var(--bs-body-color);   /* replaces #317777 */
+  margin-bottom: .1rem;
+}
+
+/* Secondary text (dates, positions) */
+.teaching-course .text-body-secondary {
+  color: var(--bs-secondary-color) !important;
+}
+
+.teaching-code a {
+  text-decoration: none;   /* removes underline */
+  color: blue;          /* keeps the same color as the heading */
+}
+
+.teaching-code a:hover {
+  text-decoration: underline;   /* optional: underline only on hover */
+}
 
 
 
